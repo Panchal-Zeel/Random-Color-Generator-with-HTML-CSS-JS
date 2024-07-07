@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random color generator</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 15px;
+            width: fit-content;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px 40px;
+            text-align: center;
+        }
+
+        .btns {
+            width: fit-content;
+            /* background-color: white; */
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        main h4 {
+            color: red;
+        }
+
+        button {
+            padding: 8px 30px;
+            font-weight: 500;
+            letter-spacing: 1px;
+            font-weight: 600;
+            border-radius: 5px;
+            cursor: pointer;
+            border: none;
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h4>Click on 'Start' to change background every second and 'Stop' to stop it</h4>
+        <div class="btns">
+            <button id="start">Start</button>
+            <button id="stop" disabled>Stop</button>
+        </div>
+    </main>
+    <div class="color"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>
